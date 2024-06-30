@@ -1,0 +1,11 @@
+.btn-turquoise {
+    background-color: turquoise;
+    border-color: turquoise;
+    color: white;
+  }
+  
+  .btn-turquoise:hover {
+    background-color: #40e0d0; /* Slightly darker shade for hover effect */
+    border-color: #40e0d0;
+  }
+  

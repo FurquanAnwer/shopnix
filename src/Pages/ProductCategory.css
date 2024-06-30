@@ -1,0 +1,6 @@
+.scrollable-section {
+  max-height: 500px; /* Adjust the height as needed */
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%; /* Ensure it takes the full width of its container */
+}
