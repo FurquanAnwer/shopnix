@@ -19,32 +19,35 @@ const ProductCategory = () => {
   
   return (
     <BackgroundWrapper>
-        <div className="container mt-5 bg-white w-75 h-50">
-            <div className="row">
-                <div className="col-md-6 d-flex justify-content-center">
-                    <div className="p-3" >
-                      <div className="p-3 scrollable-section">
-                        <BasicDetails />
-                        <PricingDetails />
-                      </div>  
-                    </div>
-                </div>
-            <div className="col-md-6 d-flex justify-content-center">
-                {/* <div className="text-center justify-content-center"> */}
-                <ProductInfo />
-                {/* </div> */}
+      <div className="container mt-5 bg-white p-4">
+        <div className="row">
+          {/* Left Section */}
+          <div className="col-md-7 d-flex align-items-center">
+            <div className="p-4 w-100" style={{ maxWidth: '100%', overflowX: 'hidden' }}>
+              <div style={{ maxHeight: '60vh', overflowY: 'auto', overflowX: 'hidden', padding: '10px' }}>
+                <BasicDetails />
+                <PricingDetails />
+              </div>  
             </div>
-        </div>
-        <div className="row mt-3">
-          <div className="col-md-8 offset-md-2 d-flex justify-content-between">
-            <button className="btn btn-secondary p-2" onClick={handleBack}>Back</button>
-            <button className="btn btn-success p-2" onClick={handleNext}>Next</button>
+          </div>
+
+          {/* Right Section */}
+          <div className="col-md-5 d-flex align-items-center">
+            <div className="p-4 w-100">
+              <ProductInfo />
+            </div>
           </div>
         </div>
-        </div>
-    </BackgroundWrapper>
 
-  
+        {/* Navigation Buttons */}
+        <div className="row mt-3">
+          <div className="col-md-12 d-flex justify-content-between">
+            <button className="btn btn-secondary" onClick={handleBack}>Back</button>
+            <button className="btn btn-success" onClick={handleNext}>Next</button>
+          </div>
+        </div>
+      </div>
+    </BackgroundWrapper>
   );
 };
 

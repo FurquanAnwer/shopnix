@@ -21,19 +21,7 @@ const Theme = () => {
     { id: 3, title: 'Chic theme', image: 'https://shorturl.at/zmbgM' }
   ];
 
-  // const callToasterforTheme = () => {
-  //   toast.success('Theme Selected - ${selectedTheme}', {
-  //     duration: 1000,
-  //     position: 'top-center',
-  //     style: {
-  //       background: '#333',
-  //       color: '#fff',
-  //     },
-  //     icon: '✔️',
-  //   }
-  // )};
-
-
+  
   const handleApply = (theme) => {
     dispatch(setTheme(theme));
     setAppliedTheme(theme);
@@ -65,7 +53,6 @@ const Theme = () => {
     <BackgroundWrapper>
 
     <div className="container mt-5">
-    {/* <h1 style={{ color: 'turquoise', fontFamily: 'Arial, sans-serif' }}>Apply a theme</h1> */}
     <div className="row p-3">
         {themes.map((theme) => (
           <ThemeCard 
@@ -79,8 +66,6 @@ const Theme = () => {
       </div>
 
       <div className="container mt-5 d-flex justify-content-center">
-            {/* <button className="btn btn-success mt-3" onClick={handleNext}>Next</button> */}
-            {/* <p className="mt-3">Selected Theme: {selectedTheme}</p> */}
             <button 
               className="btn mt-3 btn btn-primary btn-lg" 
               onClick={handleNext} 
@@ -90,15 +75,12 @@ const Theme = () => {
       
       <Toaster 
         toastOptions={{
-          // Define default options
           duration: 3000,
           position: 'top-right',
-          // Apply custom styles to all toasts
           style: {
             background: '#363636',
             color: '#fff',
           },
-          // Default options for specific types
           success: {
             duration: 3000,
             icon: '✔️',

@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 const ImageDisplay = () => {
-  const { preview } = useSelector(state => state.image); // Access the image preview from the Redux store
+  const { preview } = useSelector(state => state.image); 
 
   return (
     <div>

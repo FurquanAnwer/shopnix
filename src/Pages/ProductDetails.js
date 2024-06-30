@@ -8,14 +8,6 @@ import { FocusProvider } from '../Contexts.js/FocusContext';
 
 const ProductDetails = () => {
   
-//   const handleFocus = (field) => {
-//     setFocusedField(field);
-//   };
-
-//   const handleBlur = () => {
-//     setFocusedField('');
-//   };
-
   return (
     <BackgroundWrapper>
         <div className="container mt-5 bg-white w-75">

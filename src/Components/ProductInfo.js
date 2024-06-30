@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux';
 import ImageDisplay from './ImageDisplay';
 
 const ProductInfo = () => {
-  // const imageSource = "https://shorturl.at/gEyCO";
   const title = useSelector((state) => state.product.productCategory);
   const description = useSelector((state) => state.product.productDescription);
   const code = useSelector((state) => state.product.SKUCode);
@@ -15,7 +14,6 @@ const ProductInfo = () => {
 
   return (
     <div className="mt-4 p-4 w-75 h-75 border border-dark justify-content-center" style={{ textAlign: 'center' }}>
-      {/* <img src={imageSource} alt={title} style={{ maxWidth: '100%', height: 'auto' }} /> */}
       <ImageDisplay/>
       <h2 className='p-2'>{title}</h2>
       <div style = {{
